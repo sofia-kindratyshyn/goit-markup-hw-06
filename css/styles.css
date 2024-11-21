@@ -1,0 +1,138 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #2E2F42;
+}
+
+header {
+    border-bottom: color #E7E9FC solid 1px;
+    color: #000;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
+    font-family: "Railway", sans-serif;
+    color: #2E2F42;
+}
+
+.logo-part {
+    color: #4D5AE5;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.nav-list-item {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E2F42;
+}
+
+.nav-list-item:hover {
+    color: #404BBF;
+}
+
+.nav-list-item:active {
+    color: #404BBF;
+}
+
+.contacts-list {
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.contacts-list-item {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E2F42;
+
+}
+
+.contacts-list-item:hover {
+    color: #404BBF;
+}
+
+.solution-card {
+    background-color: #2E2F42;
+}
+
+h1 {
+    font-size: 56px;
+    color: #ffffff;
+    width: 496px;
+}
+
+.order-button {
+    border: none;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #404BBF;
+}
+
+.benefits-list-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.benefits-list-item {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.team {
+    background-color: #F4F4FD;
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.team-member-name {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.team-list-item {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer {
+    background-color: #2E2F42;
+}
+
+.footer-logo {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
+    font-family: "Railway", sans-serif;
+    color: #F4F4FD;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 24px;
+}

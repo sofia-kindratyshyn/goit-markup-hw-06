@@ -28,14 +28,6 @@ ul {
     list-style: none;
 }
 
-.nav-list-item1 {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #2E2F42;
-    letter-spacing: 0.02em
-}
 
 .nav-list-item {
     text-decoration: none;
@@ -46,11 +38,8 @@ ul {
     letter-spacing: 0.02em
 }
 
-.nav-list-item1:hover {
-    color: #404BBF;
-}
-
-.nav-list-item1:focus {
+.nav-list-item:hover,
+.nav-list-item:focus {
     color: #404BBF;
 }
 
@@ -183,7 +172,7 @@ ul {
     text-transform: capitalize;
 }
 
-.portfolio-list-title {
+.portfolio-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;

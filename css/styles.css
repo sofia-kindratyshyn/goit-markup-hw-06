@@ -73,8 +73,6 @@ p {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     color: #4d5ae5;
-    /*align-items: center;
-    display: flex;*/
     margin-right: 76px
 }
 
@@ -93,7 +91,8 @@ ul {
     font-size: 16px;
     line-height: 24px;
     color: #2E2F42;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .nav-item {
@@ -181,9 +180,14 @@ ul {
 
 /*Benefits*/
 
+.bnfts {
+    width: 1168px;
+}
 
 .benefits {
     padding: 120px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .visually-hidden {
@@ -212,7 +216,7 @@ ul {
 }
 
 .benefits-item {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4)
 }
 
 .benefits-list-item {

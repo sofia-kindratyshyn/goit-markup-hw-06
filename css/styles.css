@@ -24,24 +24,29 @@ p {
 }
 
 /*  ====== HEADER ======= */
-.hdr-container {
+.hdr {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
+.sltn {
     color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    flex-direction: column;
 
 }
 
@@ -56,7 +61,7 @@ p {
     justify-content: space-between;
     flex-direction: row;
     gap: 40px;
-    padding: 24px 0;
+
 }
 
 .logo {
@@ -176,12 +181,20 @@ ul {
 
 /*Benefits*/
 
-.hiddn-title {
-    display: none;
-}
 
 .benefits {
-    padding: 120px 156px;
+    padding: 120px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
 }
 
 .benefits-list {
@@ -195,6 +208,11 @@ ul {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.benefits-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .benefits-list-item {
@@ -202,7 +220,6 @@ ul {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
-    width: 264px;
 }
 
 /*Our Team*/

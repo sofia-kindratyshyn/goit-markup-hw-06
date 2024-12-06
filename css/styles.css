@@ -333,11 +333,9 @@ ul {
 /*  ====== FOOTER ======= */
 .page-footer {
     background-color: #2E2F42;
-    padding-left: 156px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-
+    padding: 100px 0;
 }
+
 
 .footer-logo {
     text-transform: uppercase;
@@ -349,6 +347,8 @@ ul {
     color: #4d5ae5;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -360,6 +360,5 @@ ul {
     line-height: 24px;
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    width: 264px;
-    margin-top: 17px;
+    max-width: 264px
 }

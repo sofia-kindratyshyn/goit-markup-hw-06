@@ -296,6 +296,8 @@ ul {
 /*Our Portfolio*/
 .portfolio {
     padding: 120px 0 120px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio-list {

@@ -246,6 +246,10 @@ ul {
     justify-content: center;
 }
 
+.tm {
+    width: 1128px;
+}
+
 .team-list {
     display: flex;
     justify-content: center;

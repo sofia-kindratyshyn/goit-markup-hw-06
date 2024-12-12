@@ -132,41 +132,6 @@ ul {
     /* Вирівнюємо по лівому краю */
 }
 
-.nav-list-item.scnd:active::after {
-    content: '';
-    border-radius: 2px;
-    width: 66px;
-    height: 4px;
-    background-color: #404bbf;
-    display: flex;
-    margin-top: 20px;
-    display: block;
-    /* Використовуємо block для псевдоелемента */
-    position: absolute;
-    /* Абсолютне позиціонування */
-    bottom: -3px;
-    /* Встановлюємо донизу від елемента */
-    left: 0;
-    /* Вирівнюємо по лівому краю */
-}
-
-.nav-list-item.trd:active::after {
-    content: '';
-    border-radius: 2px;
-    width: 67px;
-    height: 4px;
-    background-color: #404bbf;
-    display: flex;
-    margin-top: 20px;
-    display: block;
-    /* Використовуємо block для псевдоелемента */
-    position: absolute;
-    /* Абсолютне позиціонування */
-    bottom: -3px;
-    /* Встановлюємо донизу від елемента */
-    left: 0;
-    /* Вирівнюємо по лівому краю */
-}
 
 .nav-item {
     padding: 24px 0;
@@ -416,7 +381,7 @@ ul {
 }
 
 .logos-team {
-    fill: #fff;
+    fill: #f4f4fd;
 }
 
 /*Our Portfolio*/
@@ -523,9 +488,8 @@ ul {
 }
 
 /*  ====== FOOTER ======= */
-.about-cmpny {
-    display: flex;
-    flex-direction: column;
+.about-cmpn {
+    margin-right: 120px;
 }
 
 .contacts-cmpn {
@@ -535,7 +499,7 @@ ul {
 
 }
 
-.contacts-cmpn ul {
+.footer-social-list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -544,22 +508,23 @@ ul {
     padding: 0;
 }
 
-.contacts-cmpn a {
+.ftr-logo {
     width: 40px;
     height: 40px;
     background-color: #4D5AE5;
-    border-radius: 40px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-cmpn a:hover {
-    background-color: #31D0AA;
+.ftr-logo:hover,
+.ftr-logo:focus {
+    background-color: #31d0aa;
 }
 
-.contacts-cmpn p {
+.footer-social-text {
     font: 500 16px / 1.5 "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: #fff;
@@ -574,8 +539,8 @@ ul {
 .ftr {
     margin-left: 156px;
     display: flex;
-    gap: 120px;
-    align-items: flex-start;
+    align-items: baseline;
+
 }
 
 .footer-logo {

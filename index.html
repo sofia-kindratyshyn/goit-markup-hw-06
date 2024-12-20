@@ -410,17 +410,18 @@
                     </li>
                 </ul>
             </div>
-
-            <form class="ftr-form">
-                <div class="ftr-form-cntnr">
-                    <label class="ftr-form-text" for="email">Subscribe</label>
-                    <input class="ftr-form-input" id="email" type="email" placeholder="E-mail" />
-                </div>
-                <button class="ftr-form-btn" type="submit"><span class="btn-text">Subscribe</span> <svg class="btn-svg"
-                        width="24" height="24">
-                        <use href="../images/icons.svg#icon-telegram"></use>
-                    </svg></button>
-            </form>
+            <div class="footer-form-cntnr">
+                <p class="ftr-form-text">Subscribe</p>
+                <form class="ftr-form">
+                    <label>
+                        <input class="ftr-form-input" id="email" type="email" placeholder="E-mail">
+                    </label>
+                    <button class="ftr-form-btn" type="submit">Subscribe
+                        <svg class="btn-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg></button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="modal-overlay is-open">
@@ -434,7 +435,7 @@
             <form class="order-form">
                 <label class="input-form-label" for="name">Name</label>
                 <div class="form-input-box">
-                    <input name="name" type="text" id="name" class="order-form-input" autofocus required />
+                    <input name="name" type="text" id="name" class="order-form-input" autofocus required>
                     <svg class="order-form-svg" width="12" height="12">
                         <use href="/images/icons.svg#icon-person"></use>
                     </svg>
@@ -442,22 +443,21 @@
 
                 <label class="input-form-label" for="tel">Phone</label>
                 <div class="form-input-box">
-                    <input name="tel" type="tel" id="tel" class="order-form-input" autofocus required />
+                    <input name="tel" type="tel" id="tel" class="order-form-input" required>
                     <svg class="order-form-svg" width="12" height="12">
                         <use href="/images/icons.svg#icon-code"></use>
                     </svg>
                 </div>
-                <label class="input-form-label" for="email">Email</label>
+                <label class="input-form-label" for="emaill">Email</label>
                 <div class="form-input-box">
-                    <input name="email" type="email" id="email" class="order-form-input" autofocus required />
+                    <input name="email" type="email" id="emaill" class="order-form-input" required>
                     <svg class="order-form-svg" width="12" height="12">
                         <use href="/images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
 
                 <label class="input-form-label" for="form-user-comment">Comment</label>
-                <textarea type="textarea" id="form-user-comment" class="order-form-input text"
-                    placeholder="Text input"></textarea>
+                <textarea id="form-user-comment" class="order-form-input text" placeholder="Text input"></textarea>
 
                 <div class="order-form-checkbox">
                     <input class="ckbox-order-input visually-hidden" type="checkbox" id="checkbox" required>

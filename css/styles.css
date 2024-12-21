@@ -715,6 +715,10 @@ label {
     margin-bottom: 8px;
 }
 
+.form-inputs-wrapper .text {
+    margin-bottom: 16px;
+}
+
 .modal-window-text {
     font-weight: 500;
     font-size: 16px;
@@ -912,5 +916,4 @@ label {
 
 .order-form-checkbox {
     margin-bottom: 24px;
-    margin-top: 4px;
 }

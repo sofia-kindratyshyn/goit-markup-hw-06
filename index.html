@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <!-- ====================== HEADER ========================= -->
+
     <header class="header">
         <div class="container hdr">
             <nav class="navigation">
@@ -32,6 +32,11 @@
                     <li class="nav-item"><a class="nav-list-item trd" href="#our-contacts">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="hdr-menu-button">
+                <svg width="16.8" height="14.4" class="hdr-menu-button-icon">
+                    <use href="../images/icons.svg#icon-Group"></use>
+                </svg>
+            </button>
             <address class="contacts">
                 <ul class="contacts-list">
                     <li><a class="contacts-list-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -40,9 +45,8 @@
             </address>
         </div>
     </header>
-    <!-- ====================== MAIN ========================= -->
+
     <main>
-        <!--Solution Card-->
         <section class="solution-card">
             <div class="container sltn">
                 <h1 class="main-title">Effective Solutions
@@ -50,7 +54,8 @@
                 <button class="order-button" type="button">Order Service</button>
             </div>
         </section>
-        <!--Benefits-->
+
+
         <section class="benefits">
             <div class="container bnfts">
                 <h2 class="visually-hidden">Benefits</h2>
@@ -107,13 +112,14 @@
                 </ul>
             </div>
         </section>
-        <!--Our Team-->
+
         <section class="team">
             <div class="container tm">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-list-card">
-                        <img src="./images/people1.jpg" alt="team-member1" width="264" height="260">
+                        <img src="./images/people1.jpg" srcset="./images/people1@2x.jpg 2x" alt="team-member1"
+                            width="264" height="260">
                         <div class="team-texts">
                             <h3 class="team-list-name">Mark Guerrero</h3>
                             <p class="team-list-item">Product Designer</p>
@@ -150,7 +156,8 @@
                         </div>
                     </li>
                     <li class="team-list-card">
-                        <img src="./images/people2.jpg" alt="team-member2" width="264" height="260">
+                        <img src="./images/people2.jpg" srcset="./images/people2@2x.jpg 2x" alt="team-member2"
+                            width="264" height="260">
                         <div class="team-texts">
                             <h3 class="team-list-name">Tom Ford</h3>
                             <p class="team-list-item">Frontend Developer</p>
@@ -187,7 +194,8 @@
                         </div>
                     </li>
                     <li class="team-list-card">
-                        <img src="./images/people3.jpg" alt="team-member3" width="264" height="260">
+                        <img src="./images/people3.jpg" srcset="./images/people3@2x.jpg 2x" alt="team-member3"
+                            width="264" height="260">
                         <div class="team-texts">
                             <h3 class="team-list-name">Camila Garcia</h3>
                             <p class="team-list-item">Marketing</p>
@@ -224,7 +232,8 @@
                         </div>
                     </li>
                     <li class="team-list-card">
-                        <img src="./images/people4.jpg" alt="team-member4" width="264" height="260">
+                        <img src="./images/people4.jpg" srcset="./images/people4@2x.jpg 2x" alt="team-member4"
+                            width="264" height="260">
                         <div class="team-texts">
                             <h3 class="team-list-name">Daniel Wilson</h3>
                             <p class="team-list-item">UI Designer</p>
@@ -263,14 +272,23 @@
                 </ul>
             </div>
         </section>
-        <!--Our Portfolio-->
+
         <section class="portfolio" id="our-portfolio">
             <div class="container prtfl">
                 <h2 class="portfolio-main-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
                     <li class="portfolio-list-item">
                         <div class="boxoverlay">
-                            <img class="portfolio-image" src="./images/bank-app.jpg" alt="Banking-app" width="360">
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/prtfl-1-desktop.jpg 1x, ./images/prtfl-1-desktop@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/prtfl-1-tablet.jpg 1x, ./images/prtfl-1-tablet@2x.jpg 2x">
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/prtfl-1-mobile.jpg 1x, ./images/prtfl-1-mobile@2x.jpg 2x">
+                                <img class="portfolio-image" src="./images/prtfl-1-mobile.jpg" alt="Banking-app">
+                            </picture>
+
                             <p class="overlay-parag">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker
                                 App
@@ -285,8 +303,15 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="boxoverlay">
-                            <img class="portfolio-image" src="./images/payment.jpg" alt="Payment" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/prtfl-2-desktop.jpg 1x, ./images/prtfl-2-desktop@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/prtfl-2-tablet.jpg 1x, ./images/prtfl-2-tablet@2x.jpg 2x">
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/prtfl-2-mobile.jpg 1x, ./images/prtfl-2-mobile@2x.jpg 2x">
+                                <img class="portfolio-image" src="./images/prtfl-2-mobile.jpg" alt="Banking-app">
+                            </picture>
                             <p class="overlay-parag">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker
                                 App
@@ -301,8 +326,15 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="boxoverlay">
-                            <img class="portfolio-image" src="./images/meditation-app.jpg" alt="Meditation App"
-                                width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/prtfl-3-desktop.jpg 1x, ./images/prtfl-3-desktop@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/prtfl-3-tablet.jpg 1x, ./images/prtfl-3-tablet@2x.jpg 2x">
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/prtfl-3-mobile.jpg 1x, ./images/prtfl-3-mobile@2x.jpg 2x">
+                                <img class="portfolio-image" src="./images/prtfl-3-mobile.jpg" alt="Banking-app">
+                            </picture>
                             <p class="overlay-parag">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker
                                 App
@@ -317,8 +349,15 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="boxoverlay">
-                            <img class="portfolio-image" src="./images/taxi-service.jpg" alt="Taxi" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/prtfl-4-desktop.jpg 1x, ./images/prtfl-4-desktop@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/prtfl-4-tablet.jpg 1x, ./images/prtfl-4-tablet@2x.jpg 2x">
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/prtfl-4-mobile.jpg 1x, ./images/prtfl-4-mobile@2x.jpg 2x">
+                                <img class="portfolio-image" src="./images/prtfl-4-mobile.jpg" alt="Banking-app">
+                            </picture>
                             <p class="overlay-parag">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker
                                 App
@@ -333,8 +372,15 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="boxoverlay">
-                            <img class="portfolio-image" src="./images/screen-illustr.jpg" alt="Screen Illustration"
-                                width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/prtfl-5-desktop.jpg 1x, ./images/prtfl-5-desktop@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/prtfl-5-tablet.jpg 1x, ./images/prtfl-5-tablet@2x.jpg 2x">
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/prtfl-5-mobile.jpg 1x, ./images/prtfl-5-mobile@2x.jpg 2x">
+                                <img class="portfolio-image" src="./images/prtfl-5-mobile.jpg" alt="Banking-app">
+                            </picture>
                             <p class="overlay-parag">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker
                                 App
@@ -349,8 +395,15 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="boxoverlay">
-                            <img class="portfolio-image" src="./images/online-cour.jpg" alt="Happy people" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/prtfl-6-desktop.jpg 1x, ./images/prtfl-6-desktop@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/prtfl-6-tablet.jpg 1x, ./images/prtfl-6-tablet@2x.jpg 2x">
+                                <source media="(min-width: 320px)"
+                                    srcset="./images/prtfl-6-mobile.jpg 1x, ./images/prtfl-6-mobile@2x.jpg 2x">
+                                <img class="portfolio-image" src="./images/prtfl-6-mobile.jpg" alt="Banking-app">
+                            </picture>
                             <p class="overlay-parag">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker
                                 App
@@ -367,7 +420,7 @@
             </div>
         </section>
     </main>
-    <!-- ====================== FOOTER ========================= -->
+
     <footer class="page-footer" id="our-contacts">
         <div class="container ftr">
             <div class="about-cmpn">
@@ -425,7 +478,8 @@
             </div>
         </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <!--
+    <div class="modal-overlay">
         <div class="modal">
             <button type="button" class="close-window-btn">
                 <svg class="close-window-btn-svg" width="8" height="8">
@@ -477,6 +531,55 @@
                 </div>
                 <button class="order-form-button" type="submit">Send</button>
             </form>
+        </div>
+    </div> 
+    -->
+    <div class="mobile-menu">
+        <div class="container container-mobile-menu">
+            <button type="button" class="mobile-class-btn"><svg class="close-icon-mob" width="8" height="8">
+                    <use href="../images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg> </button>
+            <ul class="mobile-list">
+                <li class="mobile-list-item"><a class="mobile-link-item">Studio</a></li>
+                <li class="mobile-list-item"><a class="mobile-link-item">Portfolio</a></li>
+                <li class="mobile-list-item"><a class="mobile-link-item">Contacts</a></li>
+            </ul>
+            <address class="contacts-mb">
+                <ul class="contacts-list-mb">
+                    <li><a class="contacts-list-item-mb" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li><a class="contacts-list-item-mb" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+            <ul class="mobile-logos-list">
+                <li class="mobile-logos-item"><a class="logotup" href="https://www.instagram.com/" target="_blank">
+                        <svg class="logos-mb-menu" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-logos-item">
+                    <a class="logotup" href="https://x.com/" target="_blank">
+                        <svg class="logos-mb-menu" width="24" height="24">
+                            <use href="./images/icons.svg#icon-Vector1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-logos-item">
+                    <a class="logotup" href="https://www.facebook.com/" target="_blank">
+                        <svg class="logos-mb-menu" width="24" height="24">
+                            <use href="./images/icons.svg#icon-Vector-11"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-logos-item">
+                    <a class="logotup" href="https://www.linkedin.com/" target="_blank">
+                        <svg class="logos-mb-menu" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
